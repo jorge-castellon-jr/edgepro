@@ -8,3 +8,5 @@ fields:
   config:
     required: true
   description: Enter title, needs to match filename for routing
+pages:
+- content/pages/home-page.md
