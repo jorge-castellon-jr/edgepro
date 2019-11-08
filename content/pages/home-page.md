@@ -4,7 +4,7 @@ title: Home Page
 ---
 Testing to see if this works
 
-![](media/download.png)
+![Football](media/download.png "Image Title")
 
 **Hello**
 
