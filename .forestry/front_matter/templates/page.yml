@@ -9,4 +9,5 @@ fields:
     required: true
   description: Enter title, needs to match filename for routing
 pages:
+- content/pages/home-page-1.md
 - content/pages/home-page.md
