@@ -26,13 +26,15 @@ export default {
     },
     async asyncData ({ params }) {
         try {
-            let singlePage = await util.getPage( 'pages/' + params.pages )
+            let singlePage = await util.getPage( 'pages/' + params.pages ),
+                url = "https://edge-pro.netlify.com/" + params.pages
+            console.log(url)
             return {
                 page: singlePage,
                 structuredData: {
                     "@context": "http://schema.org",
                     "@type": "Organization",
-                    "url": window.location.href,
+                    "url": url,
                     "contactPoint": {
                         "@type": "ContactPoint",
                         "telephone": "+1-916-582-2335",

@@ -48,7 +48,7 @@ export default {
           structuredData: {
               "@context": "http://schema.org",
               "@type": "Organization",
-              "url": window.location.href,
+              "url": "https://edge-pro.netlify.com/",
               "contactPoint": {
                   "@type": "ContactPoint",
                   "telephone": "+1-916-582-2335",
