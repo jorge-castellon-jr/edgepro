@@ -36,13 +36,25 @@ import util from '~/assets/js/utils/global_func'
 export default {
   head () {
     return {
-      title: 'home'
+      title: 'home',
+      __dangerouslyDisableSanitizers: ['script'],
+      script: [{ innerHTML: JSON.stringify(this.structuredData), type: 'application/ld+json' }]
     }
   },
   async asyncData () {
       return {
           pages: await util.getAllPages(),
-          util: util
+          util: util,
+          structuredData: {
+              "@context": "http://schema.org",
+              "@type": "Organization",
+              "url": window.location.href,
+              "contactPoint": {
+                  "@type": "ContactPoint",
+                  "telephone": "+1-916-582-2335",
+                  "contactType": "Customer service"
+              }
+          },
       }
   },
   components: {
