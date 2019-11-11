@@ -16,7 +16,7 @@ import util from '~/assets/js/utils/global_func'
 export default {
     head() {
         return {
-            title: this.title,
+            title: this.page.attributes.title || '',
             meta: [
                 { hid: 'description', name: 'description', content: this.page.attributes.description || '' }
             ],
