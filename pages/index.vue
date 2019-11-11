@@ -23,6 +23,7 @@
         >
           GitHub
         </a>
+        <p v-for="page in pages" :key="page.attributes.title"><a :href="`/${util.formatSlug(page.attributes.title)}`">{{ page.attributes.title }}</a></p>
       </div>
     </div>
   </div>
@@ -33,10 +34,15 @@ import Logo from '~/components/Logo.vue'
 import util from '~/assets/js/utils/global_func'
 
 export default {
-
+  head () {
+    return {
+      title: 'home'
+    }
+  },
   async asyncData () {
       return {
-          pages: util.getAllPages()
+          pages: await util.getAllPages(),
+          util: util
       }
   },
   components: {

@@ -1,19 +1,22 @@
 const util = {
 
     getAllPages () {
-        const resolve = await require.context(`~/content/pages/`, true, /\.md$/)
+        const resolve = require.context(`~/content/pages/`, true, /\.md$/)
 
         const imports = resolve.keys().map((key) => {
-          const [, name] = key.match(/\/(.+)\.md$/)
-          return resolve(key)
+            return resolve(key)
         })
 
         return imports
     },
     getPage ( source ) {
-        const resolve = await import(`~/content/products/${source}.md`);
-        
+        const resolve = import(`~/content/${source}.md`);
+
         return resolve
+    },
+    formatSlug(title) {
+        const regex = / /gi;
+        return title.toLowerCase().trim().replace(regex, "-")
     }
 }
 
