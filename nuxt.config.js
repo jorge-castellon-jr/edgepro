@@ -2,7 +2,7 @@ import path from "path";
 
 const glob = require('glob');
 const dynamicRoutes = getDynamicPaths({
-  '/pages': 'content/pages/*.md',
+  '/': 'content/pages/*.md',
 });
 
 export default {
@@ -39,7 +39,7 @@ export default {
   ** Nuxt.js dev-modules
   */
   buildModules: [
-    '@nuxtjs/google-analytics'
+    // '@nuxtjs/google-analytics'
   ],
 
   /*
