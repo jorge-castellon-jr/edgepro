@@ -2,7 +2,7 @@ import path from "path";
 
 const glob = require('glob');
 const dynamicRoutes = getDynamicPaths({
-  '/product': 'content/pages/*.md',
+  '/pages': 'content/pages/*.md',
 });
 
 export default {
@@ -76,7 +76,7 @@ export default {
           test: /\.md$/,
           loader: "frontmatter-markdown-loader",
           include: [
-            path.resolve(__dirname, "content")
+            path.resolve(__dirname, "content/pages")
           ]
       })
     }
