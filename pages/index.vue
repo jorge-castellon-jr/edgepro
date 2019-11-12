@@ -32,6 +32,7 @@
 <script>
 import Logo from '~/components/Logo.vue'
 import util from '~/assets/js/utils/global_func'
+import companyJSON from '~/content/data/company.json'
 
 export default {
   head () {
@@ -42,20 +43,37 @@ export default {
     }
   },
   async asyncData () {
-      return {
-          pages: await util.getAllPages(),
-          util: util,
-          structuredData: {
-              "@context": "http://schema.org",
-              "@type": "Organization",
-              "url": "https://edge-pro.netlify.com/",
-              "contactPoint": {
-                  "@type": "ContactPoint",
-                  "telephone": "+1-916-582-2335",
-                  "contactType": "Customer service"
-              }
+    let url = "https://edge-pro.netlify.com/",
+        logoURL = url + companyJSON.company_logo
+
+    return {
+      pages: await util.getAllPages(),
+      util: util,
+      structuredData: {
+        "@context": "http://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": url,
+            "url": url,
+            "logo": logoURL,
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+1-916-582-2335",
+                "contactType": "Customer service"
+            },
           },
-      }
+          {
+            "@type": "WebPage",
+            "url": url,
+            "logo": logoURL,
+            "isPartOf": {
+              "@id": url,
+            }
+          }
+        ]
+      },
+    }
   },
   components: {
     Logo

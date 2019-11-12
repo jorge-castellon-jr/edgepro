@@ -12,6 +12,7 @@
 
 <script>
 import util from '~/assets/js/utils/global_func'
+import companyJSON from '~/content/data/company.json'
 
 export default {
     head() {
@@ -27,14 +28,17 @@ export default {
     async asyncData ({ params }) {
         try {
             let singlePage = await util.getPage( 'pages/' + params.pages ),
-                url = "https://edge-pro.netlify.com/" + params.pages
-            console.log(url)
+                url = "https://edge-pro.netlify.com/",
+                currentPage = url + params.pages,
+                logoURL = url + companyJSON.company_logo
+            
             return {
                 page: singlePage,
                 structuredData: {
                     "@context": "http://schema.org",
                     "@type": "Organization",
-                    "url": url,
+                    "url": currentPage,
+                    "logo": logoURL,
                     "contactPoint": {
                         "@type": "ContactPoint",
                         "telephone": "+1-916-582-2335",
