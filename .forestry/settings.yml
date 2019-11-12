@@ -14,7 +14,7 @@ sections:
   templates:
   - page
 upload_dir: static/media
-public_path: media
+public_path: "/media"
 front_matter_path: "/media"
 use_front_matter_path: true
 file_template: ":filename:"
