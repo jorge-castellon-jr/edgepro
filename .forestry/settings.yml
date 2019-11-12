@@ -6,6 +6,10 @@ webhook_url:
 sections:
 - type: heading
   label: Content
+- type: document
+  path: content/data/company.json
+  label: Company Info
+  match: "**/*"
 - type: directory
   path: content/pages
   label: Pages
