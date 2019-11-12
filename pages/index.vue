@@ -53,12 +53,9 @@ export default {
         "@context": "http://schema.org",
         "@graph": [
           {
-            "@type": "WebSite",
-            "@id": url,
-            "url": url,
-          },
-          {
             "@type": "Organization",
+            "legalName": companyJSON.company_name || '',
+            "location": companyJSON.company_address || '',
             "url": url,
             "logo": logoURL,
             "contactPoint": {
@@ -66,6 +63,11 @@ export default {
                 "telephone": "+1-916-582-2335",
                 "contactType": "Customer service"
             },
+          },
+          {
+            "@type": "WebSite",
+            "@id": url,
+            "url": url,
           },
           {
             "@type": "WebPage",
