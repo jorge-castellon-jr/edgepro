@@ -54,12 +54,12 @@ export default {
         "@graph": [
           {
             "@type": "Organization",
-            "legalName": companyJSON.company_name || '',
+            "name": companyJSON.company_name || '',
             "address": {
               "@type": "PostalAddress",
-              "addressLocality": companyJSON.comapny_city || '',
+              "addressLocality": companyJSON.company_city || '',
               "addressRegion": companyJSON.state || '',
-              "postalCode": companyJSON.comapny_zip || '',
+              "postalCode": companyJSON.company_zip || '',
               "streetAddress": companyJSON.company_address || '',
               },
             "url": url,
