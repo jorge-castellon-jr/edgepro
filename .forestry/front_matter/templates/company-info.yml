@@ -49,6 +49,18 @@ fields:
   config:
     required: false
   label: Company City
+- name: state
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: State
 - name: company_zip
   type: text
   config:
