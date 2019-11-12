@@ -56,6 +56,10 @@ export default {
             "@type": "WebSite",
             "@id": url,
             "url": url,
+          },
+          {
+            "@type": "Organization",
+            "url": url,
             "logo": logoURL,
             "contactPoint": {
                 "@type": "ContactPoint",
