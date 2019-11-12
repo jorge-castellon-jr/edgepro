@@ -34,15 +34,25 @@ fields:
     min: 
     max: 
     step: 
-- name: company_address
-  type: text
-  config:
-    required: false
-  label: Company Address
 - name: company_email
   type: text
   config:
     required: false
   label: Company Email
+- name: company_address
+  type: text
+  config:
+    required: false
+  label: Company Street Address
+- name: company_city
+  type: text
+  config:
+    required: false
+  label: Company City
+- name: company_zip
+  type: text
+  config:
+    required: false
+  label: Company Zip Code
 pages:
 - content/data/company.json
