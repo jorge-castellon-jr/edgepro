@@ -18,5 +18,5 @@ fields:
       format: markdown
   label: Description
 pages:
-- content/pages/home-page-1.md
 - content/pages/home-page.md
+- content/pages/home-page-1.md

@@ -1,10 +1,11 @@
 ---
 title: Home Page
+description: SEO testing some stuff blah blah blah
 
 ---
 Testing to see if this works
 
-![Football](media/download.png "Image Title")
+![](/media/download.png)
 
 **Hello**
 
