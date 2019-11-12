@@ -2,7 +2,7 @@ import path from "path";
 
 const glob = require('glob');
 const dynamicRoutes = getDynamicPaths({
-  '/': 'content/pages/*.md',
+  '': 'content/pages/*.md',
 });
 
 export default {
