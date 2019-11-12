@@ -44,3 +44,5 @@ fields:
   config:
     required: false
   label: Company Email
+pages:
+- content/data/company.json
