@@ -55,7 +55,11 @@ export default {
           {
             "@type": "Organization",
             "legalName": companyJSON.company_name || '',
-            "location": companyJSON.company_address || '',
+            "location": {
+              "streetAddress": companyJSON.company_address || '',
+              "addressLocality": companyJSON.comapny_city,
+              "postalCode": companyJSON.comapny_zip,
+              },
             "url": url,
             "logo": logoURL,
             "contactPoint": {
