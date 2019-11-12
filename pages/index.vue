@@ -43,7 +43,7 @@ export default {
     }
   },
   async asyncData () {
-    let url = "https://edge-pro.netlify.com/",
+    let url = "https://edge-pro.netlify.com",
         logoURL = url + companyJSON.company_logo
 
     return {
@@ -66,7 +66,6 @@ export default {
           {
             "@type": "WebPage",
             "url": url,
-            "logo": logoURL,
             "isPartOf": {
               "@id": url,
             }
