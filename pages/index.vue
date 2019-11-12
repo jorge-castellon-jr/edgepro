@@ -57,9 +57,10 @@ export default {
             "legalName": companyJSON.company_name || '',
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": companyJSON.company_address || '',
               "addressLocality": companyJSON.comapny_city || '',
+              "addressRegion": companyJSON.state || '',
               "postalCode": companyJSON.comapny_zip || '',
+              "streetAddress": companyJSON.company_address || '',
               },
             "url": url,
             "logo": logoURL,
