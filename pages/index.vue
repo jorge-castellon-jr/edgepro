@@ -48,8 +48,6 @@ export default {
 
     return {
       pages: await util.getAllPages(),
-      headTitle: "Title placed here",
-      headDesc: "Description goes here and blah blah blah blah blah blah",
       util: util,
       structuredData: {
         "@context": "http://schema.org",
@@ -76,8 +74,8 @@ export default {
             "@type": "WebSite",
             "@id": url,
             "url": url,
-            "name": this.headTitle,
-            "description": this.headDesc
+            "name": "Title placed here",
+            "description": "Description goes here and blah blah blah blah blah blah"
           },
           {
             "@type": "WebPage",
