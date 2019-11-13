@@ -17,5 +17,15 @@ fields:
     schema:
       format: markdown
   label: Description
+- name: blocks
+  type: blocks
+  template_types:
+  - 50-50
+  - content
+  - gallery
+  config:
+    min: 
+    max: 
+  label: Blocks
 pages:
 - content/pages/about-us.md
