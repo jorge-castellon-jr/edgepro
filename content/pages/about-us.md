@@ -29,6 +29,17 @@ blocks:
     ## We happy?
 
     Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.
+- template: gallery
+  gallery:
+  - "/media/o6.jpg"
+  - "/media/o5.jpg"
+  - "/media/o4.jpg"
+  - "/media/o3.jpg"
+  - "/media/o2.jpg"
+  - "/media/o1.jpg"
+- template: 50-50
+  left: ''
+  right: ''
 
 ---
 # Are you ready for the truth?
