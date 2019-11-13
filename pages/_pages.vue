@@ -58,8 +58,8 @@ export default {
                         {
                             "@type": "WebPage",
                             "url": currentPage,
-                            "name": singlePage.title,
-                            "description": singlePage.desc,
+                            "name": singlePage.title || "Did not work",
+                            "description": singlePage.desc || "Did not work",
                             "isPartOf": {
                                 "@type": "WebSite",
                                 "@id": url,
