@@ -36,14 +36,33 @@ export default {
                 page: singlePage,
                 structuredData: {
                     "@context": "http://schema.org",
-                    "@type": "Organization",
-                    "url": currentPage,
-                    "logo": logoURL,
-                    "contactPoint": {
-                        "@type": "ContactPoint",
-                        "telephone": "+1-916-582-2335",
-                        "contactType": "Customer service"
-                    }
+                    "@graph": [
+                        {
+                            "@type": "Organization",
+                            "name": companyJSON.company_name || '',
+                            "address": {
+                            "@type": "PostalAddress",
+                            "addressLocality": companyJSON.company_city || '',
+                            "addressRegion": companyJSON.state || '',
+                            "postalCode": companyJSON.company_zip || '',
+                            "streetAddress": companyJSON.company_address || '',
+                            },
+                            "url": url,
+                            "logo": logoURL,
+                            "contactPoint": {
+                                "@type": "ContactPoint",
+                                "telephone": "+1-916-582-2335",
+                                "contactType": "Customer service"
+                            },
+                        },
+                        {
+                            "@type": "WebPage",
+                            "url": currentPage,
+                            "isPartOf": {
+                                "@id": url,
+                            }
+                        }
+                    ]
                 },
             }
         } catch (err) {
