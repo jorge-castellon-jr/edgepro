@@ -2,7 +2,10 @@
 label: 50/50
 hide_body: true
 fields:
-- name: left
+- name: image_left_
+  type: boolean
+  label: Image Left?
+- name: left_content
   type: textarea
   default: ''
   config:
@@ -10,8 +13,21 @@ fields:
     wysiwyg: true
     schema:
       format: markdown
-  label: Left
-- name: right
+  label: Left Content
+  showOnly:
+    field: image_left_
+- name: left_image
+  type: file
+  config:
+    maxSize: 250
+  label: Left Image
+  showOnly:
+    field: image_left_
+    value: true
+- name: image_right_
+  type: boolean
+  label: Image Right?
+- name: right_content
   type: textarea
   default: ''
   config:
@@ -19,4 +35,14 @@ fields:
     wysiwyg: true
     schema:
       format: markdown
-  label: Right
+  label: Right Content
+  showOnly:
+    field: image_right_
+- name: right_image
+  type: file
+  config:
+    maxSize: 250
+  label: Right Image
+  showOnly:
+    field: image_right_
+    value: true
