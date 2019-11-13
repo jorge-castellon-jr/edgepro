@@ -59,7 +59,7 @@ export default {
                             "@type": "WebPage",
                             "url": currentPage,
                             "name": singlePage.attributes.title || "Did not work",
-                            "description": singlePage.attributes.desc || "Did not work",
+                            "description": singlePage.attributes.description || "Did not work",
                             "isPartOf": {
                                 "@type": "WebSite",
                                 "@id": url,
