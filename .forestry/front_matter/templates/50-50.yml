@@ -12,7 +12,7 @@ fields:
     required: false
     wysiwyg: true
     schema:
-      format: markdown
+      format: html-blocks
   label: Left Content
   showOnly:
     field: image_left_
@@ -34,7 +34,7 @@ fields:
     required: false
     wysiwyg: true
     schema:
-      format: markdown
+      format: html-blocks
   label: Right Content
   showOnly:
     field: image_right_
