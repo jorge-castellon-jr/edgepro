@@ -58,7 +58,8 @@ export default {
                         {
                             "@type": "WebPage",
                             "url": currentPage,
-                            "name": this.page.title,
+                            "name": singlePage.title,
+                            "description": singlePage.desc,
                             "isPartOf": {
                                 "@type": "WebSite",
                                 "@id": url,
