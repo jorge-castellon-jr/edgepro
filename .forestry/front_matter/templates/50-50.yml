@@ -1,4 +1,22 @@
 ---
 label: 50/50
 hide_body: true
-fields: []
+fields:
+- name: left
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Left
+- name: right
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Right
