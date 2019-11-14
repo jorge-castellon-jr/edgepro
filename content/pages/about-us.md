@@ -3,7 +3,7 @@ title: About Us
 description: Look, just because I don't be givin' no man a foot massage don't make
   it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin'
   up the way the nigger talks. Motherfucker do that shit to me, he better paralyze
-  my ass, 'cause I'll kill the motherfucker, know what I'm sayin'?
+  my ass, 'cause I'll kill the motherfucker, know what I'm sayin'
 blocks:
 - template: content
   content: "<h1>Are you ready for the truth?</h1><p>You think water moves fast? You
