@@ -81,7 +81,23 @@ blocks:
   - "/media/o1.jpg"
 - template: 50-50
   columns:
-  - image_: false
+  - type: Content
+    column_image: ''
+    column_content: "<h4>We happy?</h4><p>Well, the way they make shows is, they make
+      one show. That show's called a pilot. Then they show that show to the people
+      who make shows, and on the strength of that one show they decide if they're
+      going to make more shows. Some pilots get picked and become television programs.
+      Some don't, become nothing. She starred in one of the ones that became nothing.</p>"
+    button_: false
+    button_label: ''
+    button_link: ''
+  - type: Image
+    column_content: ''
+    column_image: "/media/edgepro-location-map.png"
+    button_: false
+    button_label: ''
+    button_link: ''
+  - type: Content
     column_image: ''
     column_content: "<h2>We happy?</h2><p>Well, the way they make shows is, they make
       one show. That show's called a pilot. Then they show that show to the people
@@ -91,15 +107,5 @@ blocks:
     button_: false
     button_label: ''
     button_link: ''
-    column: ''
-    type: ''
-  - image_: true
-    column_image: "/media/edgepro-location-map.png"
-    column_content: ''
-    button_: false
-    button_label: ''
-    button_link: ''
-    column: ''
-    type: ''
 
 ---
