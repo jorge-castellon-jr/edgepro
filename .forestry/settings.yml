@@ -22,7 +22,7 @@ front_matter_path: "/media"
 use_front_matter_path: true
 file_template: ":filename:"
 build:
-  preview_output_directory: ".nuxt"
+  preview_output_directory: "/"
   install_dependencies_command: yarn
   preview_docker_image: node:10
   mount_path: "/srv"
