@@ -21,6 +21,7 @@ fields:
   type: blocks
   template_types:
   - 50-50
+  - cards
   - content
   - gallery
   config:
