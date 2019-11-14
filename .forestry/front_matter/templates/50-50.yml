@@ -56,6 +56,6 @@ fields:
   config:
     min: '2'
     max: '4'
-    labelField: 
+    labelField: column
   label: Columns
   description: Min of 2 columns and max of 4 columns
