@@ -7,12 +7,12 @@ fields:
   fields:
   - name: type
     type: select
-    default: ''
+    default: Content
     config:
       required: false
       options:
-      - Image
       - Content
+      - Image
       source:
         type: simple
         section: 
