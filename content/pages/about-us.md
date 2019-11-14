@@ -5,8 +5,24 @@ description: Look, just because I don't be givin' no man a foot massage don't ma
   up the way the nigger talks. Motherfucker do that shit to me, he better paralyze
   my ass, 'cause I'll kill the motherfucker, know what I'm sayin'
 blocks:
+- template: cards
+  cards:
+  - card_title: last Card
+    card_image: "/media/o4.jpg"
+    card_content: "<p> blah blah blha blah blah blha blah blah blha blah blah blha
+      blah blah blha blah blah blha blah blah blha blah blah blha blah blah blha blah
+      blah blha blah blah blha blah blah blha blah blah blha blah blah blha blah blah
+      blha blah blah blha blah blah blha blah blah blha</p>"
+  - card_title: Another Card
+    card_image: "/media/o5.jpg"
+    card_content: "<p> blah blah blha blah blah blha blah blah blha blah blah blha
+      blah blah blha</p>"
+  - card_title: First Card
+    card_image: "/media/o.jpg"
+    card_content: "<p>Blah blah blah blha blah blah blha blah blah blha blah blah
+      blha blah blah blha blah blah blha blah blah blha</p>"
 - template: content
-  content: "<h1>Are you ready for the truth?</h1><p>You think water moves fast? You
+  content: "<h2>Are you ready for the truth?</h2><p>You think water moves fast? You
     should see Ice. It moves like it has a mind. Like it knows it killed the world
     once and got a taste for murder. After the avalanche, it took us a week to climb
     out. Now, I don't know exactly when we turned on each other, but I know that seven
