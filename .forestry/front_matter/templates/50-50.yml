@@ -38,6 +38,7 @@ fields:
     label: Column Content
     showOnly:
       field: type
+      value: Content
   - name: button_
     type: boolean
     label: Button?
