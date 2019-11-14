@@ -23,10 +23,10 @@ fields:
     type: file
     config:
       maxSize: 250
-    label: Column Image
     showOnly:
-      field: label
+      field: type
       value: Image
+    label: Column Image
   - name: column_content
     type: textarea
     default: ''
@@ -37,8 +37,7 @@ fields:
         format: html-blocks
     label: Column Content
     showOnly:
-      field: label
-      value: Content
+      field: type
   - name: button_
     type: boolean
     label: Button?
