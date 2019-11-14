@@ -5,9 +5,13 @@ fields:
 - name: columns
   type: field_group_list
   fields:
-  - name: image_
-    type: boolean
-    label: Image?
+  - name: column
+    type: text
+    config:
+      required: false
+    hidden: true
+    label: Column
+    default: Column
   - name: column_image
     type: file
     config:
@@ -27,6 +31,9 @@ fields:
     label: Column Content
     showOnly:
       field: image_
+  - name: image_
+    type: boolean
+    label: Image?
   - name: button_
     type: boolean
     label: Button?
