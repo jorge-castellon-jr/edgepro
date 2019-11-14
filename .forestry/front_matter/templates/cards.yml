@@ -1,4 +1,31 @@
 ---
 label: Cards
 hide_body: true
-fields: []
+fields:
+- name: cards
+  type: field_group_list
+  fields:
+  - name: card_title
+    type: text
+    config:
+      required: false
+    label: Card Title
+  - name: card_image
+    type: file
+    config:
+      maxSize: 250
+    label: Card Image
+  - name: card_content
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Card Content
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Cards
