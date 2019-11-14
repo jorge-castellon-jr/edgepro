@@ -41,13 +41,14 @@ blocks:
     but it wasn't. Nature is lethal but it doesn't hold a candle to man.</p>"
 - template: 50-50
   columns:
-  - image_: true
+  - column: Column
     column_image: "/media/edge_1.png"
     column_content: ''
+    image_: true
     button_: false
     button_label: ''
     button_link: ''
-  - image_: false
+  - column: Column
     column_image: ''
     column_content: "<h2>Is she dead, yes or no?</h2><p>Do you see any Teletubbies
       in here? Do you see a slender plastic tag clipped to my shirt with my name printed
@@ -55,6 +56,7 @@ blocks:
       outside on a mechanical helicopter that shakes when you put quarters in it?
       No? Well, that's what you see at a toy store. And you must think you're in a
       toy store, because you're here shopping for an infant named Jeb.</p>"
+    image_: false
     button_: false
     button_label: ''
     button_link: ''
@@ -91,11 +93,13 @@ blocks:
     button_: false
     button_label: ''
     button_link: ''
+    column: ''
   - image_: true
     column_image: "/media/edgepro-location-map.png"
     column_content: ''
     button_: false
     button_label: ''
     button_link: ''
+    column: ''
 
 ---
