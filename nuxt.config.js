@@ -7,6 +7,9 @@ const dynamicRoutes = getDynamicPaths({
 
 export default {
   mode: 'universal',
+  env: {
+    NODE_ENV: 'dev'
+  },
   /*
   ** Headers of the page
   */
@@ -29,6 +32,7 @@ export default {
   ** Global CSS
   */
   css: [
+    '~/assets/scss/index.scss'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -54,12 +58,13 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    'bootstrap-vue/nuxt',
     '@nuxtjs/style-resources',
     '@nuxtjs/sitemap'
   ],
   styleResources: {
     scss: [
-      './assets/scss/utils/*.scss',
+      './assets/scss/utils/index.scss',
       ]
   },
   /*

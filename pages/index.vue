@@ -1,32 +1,22 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        edgepro
-      </h1>
-      <h2 class="subtitle">
-        My mathematical Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-        <p v-for="page in pages" :key="page.attributes.title"><a :href="`/${util.formatSlug(page.attributes.title)}`">{{ page.attributes.title }}</a></p>
-      </div>
+  <b-row>
+    <b-col>
+    <logo />
+    <h1 class="title">
+      edgepro
+    </h1>
+    <h2 class="subtitle">
+      My mathematical Nuxt.js project
+    </h2>
+    <div class="links">
+      <p v-for="page in pages" :key="page.attributes.title">
+        <nuxt-link :to="`/${formatSlug(page.attributes.title)}`">
+          {{ page.attributes.title }}
+        </nuxt-link>
+      </p>
     </div>
-  </div>
+    </b-col>
+  </b-row>
 </template>
 
 <script>
@@ -48,7 +38,6 @@ export default {
 
     return {
       pages: await util.getAllPages(),
-      util: util,
       structuredData: {
         "@context": "http://schema.org",
         "@graph": [
@@ -91,12 +80,17 @@ export default {
   },
   components: {
     Logo
+  },
+  methods: {
+    formatSlug( text ){
+      return util.formatSlug(text)
+    }
   }
 }
 </script>
 
-<style>
-.container {
+<style lang="scss" scoped>
+.row {
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
