@@ -1,48 +1,54 @@
 ---
-label: 50/50
+label: Columns
 hide_body: true
 fields:
-- name: image_left_
-  type: boolean
-  label: Image Left?
-- name: left_content
-  type: textarea
-  default: ''
+- name: columns
+  type: field_group_list
+  fields:
+  - name: image_
+    type: boolean
+    label: Image?
+  - name: column_image
+    type: file
+    config:
+      maxSize: 250
+    label: Column Image
+    showOnly:
+      field: image_
+      value: true
+  - name: column_content
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: html-blocks
+    label: Column Content
+    showOnly:
+      field: image_
+  - name: button_
+    type: boolean
+    label: Button?
+  - name: button_label
+    type: text
+    config:
+      required: false
+    label: Button Label
+    showOnly:
+      field: button_
+      value: true
+  - name: button_link
+    type: text
+    config:
+      required: false
+    label: Button Link
+    showOnly:
+      field: button_
+      value: true
   config:
-    required: false
-    wysiwyg: true
-    schema:
-      format: html-blocks
-  label: Left Content
-  showOnly:
-    field: image_left_
-- name: left_image
-  type: file
-  config:
-    maxSize: 250
-  label: Left Image
-  showOnly:
-    field: image_left_
-    value: true
-- name: image_right_
-  type: boolean
-  label: Image Right?
-- name: right_content
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: true
-    schema:
-      format: html-blocks
-  label: Right Content
-  showOnly:
-    field: image_right_
-- name: right_image
-  type: file
-  config:
-    maxSize: 250
-  label: Right Image
-  showOnly:
-    field: image_right_
-    value: true
+    min: '2'
+    max: '4'
+    labelField: 
+  label: Columns
+  description: Min of 2 columns and max of 4 columns
