@@ -41,22 +41,20 @@ blocks:
     but it wasn't. Nature is lethal but it doesn't hold a candle to man.</p>"
 - template: 50-50
   columns:
-  - column: Column
-    column_image: "/media/edge_1.png"
+  - type: Image
     column_content: ''
-    image_: true
+    column_image: "/media/edge_1.png"
     button_: false
     button_label: ''
     button_link: ''
-  - column: Column
-    column_image: ''
+  - type: Content
     column_content: "<h2>Is she dead, yes or no?</h2><p>Do you see any Teletubbies
       in here? Do you see a slender plastic tag clipped to my shirt with my name printed
       on it? Do you see a little Asian child with a blank expression on his face sitting
       outside on a mechanical helicopter that shakes when you put quarters in it?
       No? Well, that's what you see at a toy store. And you must think you're in a
       toy store, because you're here shopping for an infant named Jeb.</p>"
-    image_: false
+    column_image: ''
     button_: false
     button_label: ''
     button_link: ''
@@ -94,6 +92,7 @@ blocks:
     button_label: ''
     button_link: ''
     column: ''
+    type: ''
   - image_: true
     column_image: "/media/edgepro-location-map.png"
     column_content: ''
@@ -101,5 +100,6 @@ blocks:
     button_label: ''
     button_link: ''
     column: ''
+    type: ''
 
 ---
