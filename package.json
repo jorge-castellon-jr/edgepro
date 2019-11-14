@@ -4,11 +4,18 @@
   "description": "My mathematical Nuxt.js project",
   "author": "Jorge Castellon",
   "private": true,
+  "config": {
+    "nuxt": {
+      "host": "0.0.0.0",
+      "port": "8080"
+    }
+  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "forestry-preview": "nuxt"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
