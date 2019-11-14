@@ -9,7 +9,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "forestry-preview": "nuxt --host 0.0.0.0 --port 8080"
+    "forestry-preview": "nuxt -p 8080 -H 0.0.0.0"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",

@@ -20,7 +20,6 @@ export default {
     margin: 0 auto;
 }
 img {
-    max-width: 100%;
     padding: 15px 0;
 }
 </style>

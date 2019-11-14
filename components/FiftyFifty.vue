@@ -1,5 +1,5 @@
 <template>
-    <b-row>
+    <b-row align-v="center">
         <!-- {{ block }} -->
         <b-col class="th__left" v-if="block.image_left_">
             <img :src="block.left_image" alt="">
@@ -22,12 +22,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-img {
-    max-width: 100%;
-    margin-bottom: 15px;
-}
 .row {
     max-width: 750px;
     margin: 0 auto;
 }
+
 </style>
