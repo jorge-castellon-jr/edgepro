@@ -13,14 +13,24 @@ blocks:
       blah blah blha blah blah blha blah blah blha blah blah blha blah blah blha blah
       blah blha blah blah blha blah blah blha blah blah blha blah blah blha blah blah
       blha blah blah blha blah blah blha blah blah blha</p>"
+    button_: false
+    button_label: ''
+    button_link: ''
   - card_title: Another Card
     card_image: "/media/o5.jpg"
     card_content: "<p> blah blah blha blah blah blha blah blah blha blah blah blha
       blah blah blha</p>"
+    button_: false
+    button_label: ''
+    button_link: ''
   - card_title: First Card
     card_image: "/media/o.jpg"
     card_content: "<p>Blah blah blah blha blah blah blha blah blah blha blah blah
       blha blah blah blha blah blah blha blah blah blha</p>"
+    button_: false
+    button_label: ''
+    button_link: ''
+  card_columns: 
 - template: content
   content: "<h2>Are you ready for the truth?</h2><p>You think water moves fast? You
     should see Ice. It moves like it has a mind. Like it knows it killed the world
@@ -29,18 +39,6 @@ blocks:
     of us survived the slide... and only five made it out. Now we took an oath, that
     I'm breaking now. We said we'd say it was the snow that killed the other two,
     but it wasn't. Nature is lethal but it doesn't hold a candle to man.</p>"
-- template: 50-50
-  image_left_: true
-  left_content: ''
-  left_image: "/media/edge_1.png"
-  image_right_: false
-  right_content: "<h2>Is she dead, yes or no?</h2><p>Do you see any Teletubbies in
-    here? Do you see a slender plastic tag clipped to my shirt with my name printed
-    on it? Do you see a little Asian child with a blank expression on his face sitting
-    outside on a mechanical helicopter that shakes when you put quarters in it? No?
-    Well, that's what you see at a toy store. And you must think you're in a toy store,
-    because you're here shopping for an infant named Jeb.</p>"
-  right_image: ''
 - template: content
   content: "<h2>I'm serious as a heart attack</h2><p>Now that we know who you are,
     I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how
@@ -62,18 +60,5 @@ blocks:
   - "/media/o3.jpg"
   - "/media/o2.jpg"
   - "/media/o1.jpg"
-- template: 50-50
-  left: ''
-  right: ''
-  image_left_: false
-  left_content: "<h2>We happy?</h2><p>Well, the way they make shows is, they make
-    one show. That show's called a pilot. Then they show that show to the people who
-    make shows, and on the strength of that one show they decide if they're going
-    to make more shows. Some pilots get picked and become television programs. Some
-    don't, become nothing. She starred in one of the ones that became nothing.</p>"
-  left_image: ''
-  image_right_: true
-  right_content: ''
-  right_image: "/media/edgepro-location-map.png"
 
 ---
