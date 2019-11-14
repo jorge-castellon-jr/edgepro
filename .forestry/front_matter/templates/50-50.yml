@@ -5,21 +5,28 @@ fields:
 - name: columns
   type: field_group_list
   fields:
-  - name: column
-    type: text
+  - name: type
+    type: select
+    default: ''
     config:
       required: false
-    hidden: true
-    label: Column
-    default: Column
+      options:
+      - Image
+      - Content
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Type
   - name: column_image
     type: file
     config:
       maxSize: 250
     label: Column Image
     showOnly:
-      field: image_
-      value: true
+      field: label
+      value: Image
   - name: column_content
     type: textarea
     default: ''
@@ -30,10 +37,8 @@ fields:
         format: html-blocks
     label: Column Content
     showOnly:
-      field: image_
-  - name: image_
-    type: boolean
-    label: Image?
+      field: label
+      value: Content
   - name: button_
     type: boolean
     label: Button?
