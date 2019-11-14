@@ -2,6 +2,16 @@
 label: Cards
 hide_body: true
 fields:
+- name: card_columns
+  type: number
+  label: Card Columns
+  description: ''
+  default: '3'
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
 - name: cards
   type: field_group_list
   fields:
@@ -24,6 +34,25 @@ fields:
       schema:
         format: html-blocks
     label: Card Content
+  - name: button_
+    type: boolean
+    label: Button?
+  - name: button_label
+    type: text
+    config:
+      required: false
+    label: Button Label
+    showOnly:
+      field: button_
+      value: true
+  - name: button_link
+    type: text
+    config:
+      required: false
+    showOnly:
+      field: button_
+      value: true
+    label: Button Link
   config:
     min: 
     max: 
