@@ -2,6 +2,16 @@
 label: Gallery
 hide_body: true
 fields:
+- name: columns
+  type: number
+  label: Columns
+  description: ''
+  default: '3'
+  required: true
+  config:
+    min: '2'
+    max: '6'
+    step: 
 - name: gallery
   type: image_gallery
   config: {}
