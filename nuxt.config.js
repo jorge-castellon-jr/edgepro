@@ -66,7 +66,7 @@ export default {
   styleResources: {
     scss: [
       './assets/scss/utils/index.scss',
-      ]
+    ]
   },
   robots: {
     UserAgent: '*',
