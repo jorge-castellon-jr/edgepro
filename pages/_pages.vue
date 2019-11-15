@@ -4,11 +4,12 @@
         <b-row>
             <b-col>
                 <h1 class="title">{{ page.title }}</h1>
-                <div v-for="block in page.blocks" :key="block.template">
+                <div v-for="block in page.blocks" :key="block.template" class="th__block">
                     <!-- {{ block }} -->
-                    <FiftyFifty v-if="block.template === '50-50'" :block="block" />
+                    <Columns v-if="block.template === '50-50'" :block="block" />
                     <Gallery v-else-if="block.template === 'gallery'" :block="block" />
                     <Generic v-else-if="block.template === 'content'" :block="block" />
+                    <Cards v-else-if="block.template === 'cards'" :block="block" />
                 </div>
             </b-col>
         </b-row>
@@ -22,8 +23,9 @@ import companyJSON from '~/content/data/company.json'
 import navbar from '~/components/navbar.vue'
 import footerbar from '~/components/footerbar.vue'
 import Generic from '~/components/Generic.vue'
-import FiftyFifty from '~/components/FiftyFifty.vue'
+import Columns from '~/components/Columns.vue'
 import Gallery from '~/components/Gallery.vue'
+import Cards from '~/components/Cards.vue'
 
 export default {
     head() {
@@ -90,9 +92,10 @@ export default {
     components: {
         navbar,
         footerbar,
-        FiftyFifty,
+        Columns,
         Generic,
         Gallery,
+        Cards,
     }
 }
 </script>
@@ -112,6 +115,11 @@ export default {
             letter-spacing: 1px;
             text-align: center;
         }
+    }
+
+    &__block {
+        margin: 75px auto;
+        padding: 50px 0;
     }
 }
 </style>

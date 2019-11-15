@@ -1,6 +1,7 @@
 <template>
     <b-row>
-        <b-col cols="6" v-for="img in block.gallery" :key="img">
+        <!-- {{getCol(block.columns)}} -->
+        <b-col :cols="getCol(block.columns)" v-for="img in block.gallery" :key="img">
             <b-img-lazy :src="img" alt="" />
         </b-col>
     </b-row>
@@ -10,6 +11,11 @@
 export default {
     props: {
         block: Object
+    },
+    methods: {
+        getCol( col ) {
+            return 12 / col
+        }
     }
 }
 </script>
@@ -21,5 +27,10 @@ export default {
 }
 img {
     padding: 15px 0;
+}
+@for $i from 2 through 6 {
+    .col-#{$i} {
+        display: flex
+    }
 }
 </style>
