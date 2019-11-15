@@ -5,7 +5,7 @@ description: 'Now that there is the Tec-9, a crappy spray gun from South Miami. 
   shit? It actually says that in the little book that comes with it: the most popular
   gun in American crime. Like they''re actually proud of that shit. '
 blocks:
-- template: 50-50
+- template: columns
   columns:
   - type: Image
     column_image: "/media/edgepro-location-map.png"

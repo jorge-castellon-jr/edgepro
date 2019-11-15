@@ -20,7 +20,7 @@ fields:
 - name: blocks
   type: blocks
   template_types:
-  - 50-50
+  - columns
   - cards
   - content
   - gallery
@@ -28,6 +28,9 @@ fields:
     min: 
     max: 
   label: Blocks
+- name: robots_
+  type: boolean
+  label: Robots Follow?
 pages:
 - content/pages/employees.md
 - content/pages/location.md

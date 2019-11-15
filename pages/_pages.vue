@@ -4,13 +4,7 @@
         <b-row>
             <b-col>
                 <h1 class="title">{{ page.title }}</h1>
-                <div v-for="block in page.blocks" :key="block.template" class="th__block">
-                    <!-- {{ block }} -->
-                    <Columns v-if="block.template === '50-50'" :block="block" />
-                    <Gallery v-else-if="block.template === 'gallery'" :block="block" />
-                    <Generic v-else-if="block.template === 'content'" :block="block" />
-                    <Cards v-else-if="block.template === 'cards'" :block="block" />
-                </div>
+                <Blocks :blocks="page.blocks" />
             </b-col>
         </b-row>
         <footerbar :pages="pages" />
@@ -20,19 +14,19 @@
 <script>
 import util from '~/assets/js/utils/global_func'
 import companyJSON from '~/content/data/company.json'
+
+// Components
 import navbar from '~/components/navbar.vue'
 import footerbar from '~/components/footerbar.vue'
-import Generic from '~/components/Generic.vue'
-import Columns from '~/components/Columns.vue'
-import Gallery from '~/components/Gallery.vue'
-import Cards from '~/components/Cards.vue'
+import Blocks from '~/components/Blocks.vue'
 
 export default {
     head() {
         return {
             title: this.page.title || '',
             meta: [
-                { hid: 'description', name: 'description', content: this.page.description || '' }
+                { hid: 'description', name: 'description', content: this.page.description || '' },
+                { hid: 'robots', name: 'robots', content: !this.page.robots_ ? 'index' : 'noindex' }
             ],
             __dangerouslyDisableSanitizers: ['script'],
             script: [{ innerHTML: JSON.stringify(this.structuredData), type: 'application/ld+json' }]
@@ -92,10 +86,7 @@ export default {
     components: {
         navbar,
         footerbar,
-        Columns,
-        Generic,
-        Gallery,
-        Cards,
+        Blocks
     }
 }
 </script>
