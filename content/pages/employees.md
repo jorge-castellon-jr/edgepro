@@ -29,5 +29,6 @@ blocks:
     button_: false
     button_label: ''
     button_link: ''
+robots_: true
 
 ---
