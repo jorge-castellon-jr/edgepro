@@ -35,5 +35,6 @@ blocks:
     the arch-villain's going to be? He's the exact opposite of the hero. And most
     times they're friends, like you and me! I should've known way back when... You
     know why, David? Because of the kids. They called me Mr Glass.</p>"
+robots_: true
 
 ---
