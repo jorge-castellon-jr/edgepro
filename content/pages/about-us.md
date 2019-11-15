@@ -53,6 +53,7 @@ blocks:
   - "/media/o3.jpg"
   - "/media/o2.jpg"
   - "/media/o1.jpg"
+  columns: '3'
 - template: 50-50
   columns:
   - type: Content
