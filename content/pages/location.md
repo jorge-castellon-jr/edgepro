@@ -35,30 +35,5 @@ blocks:
     the arch-villain's going to be? He's the exact opposite of the hero. And most
     times they're friends, like you and me! I should've known way back when... You
     know why, David? Because of the kids. They called me Mr Glass.</p>"
-- template: cards
-  card_columns: '3'
-  cards:
-  - card_title: First Card
-    card_image: ''
-    card_content: "<p> blah blah blha blah blah blha blah blah blha blah blah blha
-      blah blah blha</p>"
-    button_: false
-    button_label: ''
-    button_link: ''
-  - card_title: Second Card
-    card_image: ''
-    card_content: "<p> blah blah blha blah blah blha blah blah blha blah blah blha
-      blah blah blha blah blah blha blah blah blha blah blah blha blah blah blha blah
-      blah blha blah blah blha blah blah blha blah blah blha blah blah blha</p>"
-    button_: false
-    button_label: ''
-    button_link: ''
-  - card_title: Last Card
-    card_image: ''
-    card_content: "<p> blah blah blha blah blah blha blah blah blha blah blah blha
-      blah blah blha</p>"
-    button_: false
-    button_label: ''
-    button_link: ''
 
 ---
