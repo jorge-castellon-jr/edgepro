@@ -60,12 +60,19 @@ export default {
   modules: [
     'bootstrap-vue/nuxt',
     '@nuxtjs/style-resources',
+    '@nuxtjs/robots',
     '@nuxtjs/sitemap'
   ],
   styleResources: {
     scss: [
       './assets/scss/utils/index.scss',
       ]
+  },
+  robots: {
+    UserAgent: '*',
+    Disallow: '/admin',
+    Allow: '/media/',
+    Allow: '/sitemap.xml'
   },
   /*
   ** Build configuration
