@@ -6,16 +6,24 @@ description: 'Now that there is the Tec-9, a crappy spray gun from South Miami. 
   gun in American crime. Like they''re actually proud of that shit. '
 blocks:
 - template: 50-50
-  right_content: "<h1>Hold on to your butts</h1><p>Look, just because I don't be givin'
-    no man a foot massage don't make it right for Marsellus to throw Antwone into
-    a glass motherfuckin' house, fuckin' up the way the nigger talks. Motherfucker
-    do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker,
-    know what I'm sayin'?</p>"
-  image_left_: true
-  left_image: "/media/edgepro-location-map.png"
-  left_content: ''
-  image_right_: false
-  right_image: ''
+  columns:
+  - type: Image
+    column_image: "/media/edgepro-location-map.png"
+    column_content: ''
+    button_: false
+    button_label: ''
+    button_link: ''
+  - type: Content
+    column_image: ''
+    column_content: "<h2>Are you ready for the truth?</h2><p>Normally, both your asses
+      would be dead as fucking fried chicken, but you happen to pull this shit while
+      I'm in a transitional period so I don't wanna kill you, I wanna help you. But
+      I can't give you this case, it don't belong to me. Besides, I've already been
+      through too much shit this morning over this case to hand it over to your dumb
+      ass.</p>"
+    button_: false
+    button_label: ''
+    button_link: ''
 - template: content
   content: "<h2>Are you ready for the truth?</h2><p>Normally, both your asses would
     be dead as fucking fried chicken, but you happen to pull this shit while I'm in

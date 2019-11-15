@@ -29,5 +29,5 @@ fields:
     max: 
   label: Blocks
 pages:
-- content/pages/about-us.md
 - content/pages/location.md
+- content/pages/about-us.md
