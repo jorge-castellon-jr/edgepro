@@ -53,12 +53,6 @@ blocks:
     button_: false
     button_label: ''
     button_link: ''
-  - card_title: " blah blah blha Card"
-    card_image: ''
-    card_content: "<p> blah blah blha</p>"
-    button_: false
-    button_label: ''
-    button_link: ''
   - card_title: Last Card
     card_image: ''
     card_content: "<p> blah blah blha blah blah blha blah blah blha blah blah blha
