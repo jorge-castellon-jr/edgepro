@@ -29,6 +29,6 @@ fields:
     max: 
   label: Blocks
 pages:
-- content/pages/employees.md
 - content/pages/location.md
+- content/pages/employees.md
 - content/pages/about-us.md
